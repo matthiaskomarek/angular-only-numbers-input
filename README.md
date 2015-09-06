@@ -1,4 +1,4 @@
-# Angular Numbers Input
+# Angular Numbers Input [![Build Status](https://travis-ci.org/matthiaskomarek/angular-only-numbers-input.svg?branch=master)](https://travis-ci.org/matthiaskomarek/angular-only-numbers-input)
 
 Allow only numbers between specified min and max values on an input field.
 
