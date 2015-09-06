@@ -18,7 +18,6 @@ var reKaLa = geSaLaKaCuLa.recursiveKarmaLauncher;
 var versionAfterBump;
 
 gulp.task('default', ['build', 'test']);
-gulp.task('ci', ['karma-sauce']);
 gulp.task('build', ['scripts']);
 gulp.task('test', ['build', 'karma']);
 
@@ -79,25 +78,6 @@ gulp.task('karma-watch', ['build'], function() {
 	server.start();
 });
 
-gulp.task('karma-sauce', ['build'], function() {
-  var customLaunchers = geSaLaKaCuLa({
-	// TODO: add windows testing in once
-	// #5 is fixed https://github.com/angular-ui/ui-mask/issues/5
-	// 'Windows 7': {
-	//   'internet explorer': '9..11',
-	// },
-	'OS X 10.10': {
-	  'chrome': '43..44',
-	  'firefox': '39..40',
-	  'safari': '8'
-	}
-  });
-
-  reKaLa({
-	karma: Server,
-	customLaunchers: customLaunchers
-  }, process.exit);
-});
 
 var handleError = function(err) {
 	console.log(err.toString());

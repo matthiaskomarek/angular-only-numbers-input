@@ -8,5 +8,5 @@ before_install:
 - npm install -q
 - bower install --force
 - bower install --force
-script: gulp ci
+script: gulp test
 sudo: false
