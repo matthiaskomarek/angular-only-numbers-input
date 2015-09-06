@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '0.11'
+git:
+  depth: 10
+before_install:
+- npm install -qg bower gulp-cli
+- npm install -q
+- bower install --force
+- bower install --force
+script: gulp ci
+sudo: false
