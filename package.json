@@ -2,16 +2,13 @@
   "name": "angular-only-numbers-input",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "main": "./dist/onlyNumbersInput.js",
   "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://matthiaskomarek@github.com/matthiaskomarek/angular-only-numbers-input.git"
   },
-  "author": "",
+  "author": "Matthias Komarek",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/matthiaskomarek/angular-only-numbers-input/issues"
